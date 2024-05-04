@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="body">
+    <div id="container">
+        <div class="toggle-switch">
+            <label class="switch-label">
+              <input onchange="Switched()" type="checkbox" class="checkbox">
+              <span class="slider"></span>
+            </label>
+        </div>  
+        <p id="result">0</p>
+        <p id="string"></p>
+        <div class="buttons">
+            <button onclick="removeAll()" class="c-button">C</button>
+            <button onclick="calculate('%')">%</button>
+            <button onclick="removeFromEnd()"><i class="fa-solid fa-delete-left"></i></button>
+            <button onclick="calculate('/')" class="symbol">/</button>
+
+            <button onclick="calculate('7')">7</button>
+            <button onclick="calculate('8')">8</button>
+            <button onclick="calculate('9')">9</button>
+            <button onclick="calculate('*')" class="symbol">*</button>
+
+            <button onclick="calculate('4')">4</button>
+            <button onclick="calculate('5')">5</button>
+            <button onclick="calculate('6')">6</button>
+            <button onclick="calculate('-')" class="symbol">-</button>
+
+            <button onclick="calculate('1')">1</button>
+            <button onclick="calculate('2')">2</button>
+            <button onclick="calculate('3')">3</button>
+            <button onclick="calculate('+')" class="symbol">+</button>
+
+            <button onclick="calculate('00')">00</button>
+            <button onclick="calculate('0')">0</button>
+            <button onclick="sendDote()">.</button>
+            <button class="symbol" onclick="getResult()">=</button>
+        </div>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="https://kit.fontawesome.com/99f8f092a3.js" crossorigin="anonymous"></script>
+</body>
+</html>
